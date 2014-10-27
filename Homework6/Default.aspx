@@ -53,7 +53,7 @@
             <Columns>
                 <asp:BoundField DataField="recipe_name" HeaderText="Recipe Name" SortExpression="recipe_name" />
                 <asp:BoundField DataField="submitted_by" HeaderText="Submitted By" SortExpression="submitted_by" />
-                <asp:HyperLinkField NavigateUrl="RecipeDetails.aspx?recipeID={0}" Text="View" />
+                <asp:HyperLinkField Text="View" DataNavigateUrlFields="recipeID" DataNavigateUrlFormatString="RecipeDetails.aspx?recipeID={0}" />
             </Columns>
         </asp:GridView>
 &nbsp;</div>
