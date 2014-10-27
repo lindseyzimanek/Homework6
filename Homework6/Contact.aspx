@@ -48,6 +48,6 @@
          <%End If%>
 
     </form>
-    <p><i class="footer">© 2014 Lindsey Zimanek</i></p>
+    <p class="footer">© 2014 Lindsey Zimanek</p>
 </body>
 </html>

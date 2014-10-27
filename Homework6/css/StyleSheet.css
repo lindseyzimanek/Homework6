@@ -8,10 +8,11 @@
 h1{color:black; text-align:center;}
 h2{color:black; text-align:center;}
 
-footer {color:pink;text-align:center;
+.footer {color:black;
+         text-align:center;
 }
 
 .validationError {
-    color: red;
-    font-weight: bold;
+    color:red;
+    font-weight:bold;
 }

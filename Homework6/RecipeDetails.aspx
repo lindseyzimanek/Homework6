@@ -215,6 +215,6 @@
     
     </div>
     </form>
-    <div class="footer">© 2014 Lindsey Zimanek</div>
+    <p class="footer">© 2014 Lindsey Zimanek</p>
 </body>
 </html>
