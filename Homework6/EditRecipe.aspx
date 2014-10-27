@@ -54,7 +54,7 @@
         &nbsp;&nbsp;&nbsp;
         <asp:HyperLink ID="ContactLink" runat="server" NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink>
         <br />
-        <asp:FormView ID="FormView1" runat="server" CssClass="cssformview" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" DefaultMode="Edit" Width="266px">
+        <asp:FormView ID="FormView1" runat="server" CssClass="cssformview" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" DefaultMode="Edit" Width="266px" HorizontalAlign="Center">
             <EditItemTemplate>
                  <table>
                    <tr>

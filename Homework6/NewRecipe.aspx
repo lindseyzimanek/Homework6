@@ -5,6 +5,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>New Recipe</title>
+    <style type="text/css">
+        .cssformview {}
+    </style>
     <h1>Lindsey's Recipe Website</h1>
     <h2>Using 5 Ingredients or Less!</h2>
     <link rel="stylesheet" type="text/css" href="~/css/StyleSheet.css" />
@@ -51,7 +54,7 @@
         &nbsp;&nbsp;&nbsp;
         <asp:HyperLink ID="ContactLink" runat="server" NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink>
         <br />
-        <asp:FormView ID="FormView1" runat="server" CssClass="cssformview" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" DefaultMode="Insert" Width="575px">
+        <asp:FormView ID="FormView1" runat="server" CssClass="cssformview" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" DefaultMode="Insert" Width="308px" HorizontalAlign="Center">
             
             <InsertItemTemplate>
                 <div class="table">
