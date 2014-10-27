@@ -7,6 +7,7 @@
     <title>About Us</title>
     <h1>Lindsey's Recipe Website</h1>
     <h2>Using 5 Ingredients or Less!</h2>
+    <link rel="stylesheet" type="text/css" href="~/css/StyleSheet.css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -27,6 +28,6 @@
         </p>
     </div>
     </form>
-    <p><i class="footer">Copyright © 2014. Created by Lindsey Zimanek.</i></p>
+    <div id="footer"> © 2014 Lindsey Zimanek </div>
 </body>
 </html>

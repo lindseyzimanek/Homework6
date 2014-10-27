@@ -45,8 +45,8 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <br />
-        <span class="deletedRecipe"><asp:Label ID="lblDeletedRecipe" runat="server"></asp:Label></span>
         <br />
+        <div>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:HyperLink ID="HomeLink" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
         &nbsp;&nbsp;&nbsp;
@@ -55,6 +55,7 @@
         <asp:HyperLink ID="AboutUsLink" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink>
         &nbsp;&nbsp;&nbsp;
         <asp:HyperLink ID="ContactLink" runat="server" NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink>
+            </div>
         <br />
         <br />
         <asp:Label ID="lblDeletedRecipe" runat="server"></asp:Label>
@@ -214,6 +215,6 @@
     
     </div>
     </form>
-    <p><i class="footer">Copyright © 2014. Created by Lindsey Zimanek.</i></p>
+    <div class="footer">© 2014 Lindsey Zimanek</div>
 </body>
 </html>
