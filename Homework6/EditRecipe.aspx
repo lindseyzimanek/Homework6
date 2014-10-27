@@ -45,13 +45,13 @@
         </asp:SqlDataSource>
         <br />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:HyperLink ID="HyperLink1" runat="server">Home</asp:HyperLink>
+        <asp:HyperLink ID="HomeLink" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
         &nbsp;&nbsp;&nbsp;
-        <asp:HyperLink ID="HyperLink2" runat="server">New Recipe</asp:HyperLink>
+        <asp:HyperLink ID="NewRecipeLink" runat="server" NavigateUrl="~/NewRecipe.aspx">New Recipe</asp:HyperLink>
         &nbsp;&nbsp;&nbsp;
-        <asp:HyperLink ID="HyperLink3" runat="server">About Us</asp:HyperLink>
+        <asp:HyperLink ID="AboutUsLink" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink>
         &nbsp;&nbsp;&nbsp;
-        <asp:HyperLink ID="HyperLink4" runat="server">Contact</asp:HyperLink>
+        <asp:HyperLink ID="ContactLink" runat="server" NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink>
         <br />
         <asp:FormView ID="FormView1" runat="server" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" DefaultMode="Edit">
             <EditItemTemplate>
