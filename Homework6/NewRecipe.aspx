@@ -80,7 +80,7 @@
                             <asp:TextBox ID="tbSubmittedBy" runat="server" Text='<%# Bind("submitted_by") %>' />
                         </td>
                         <td style="text-align:left;">
-                            
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please enter your name." CssClass="validationError" ControlToValidate="tbSubmittedBy"></asp:RequiredFieldValidator>
                         </td>
                     </tr>
                     <tr>
@@ -91,7 +91,7 @@
                             <asp:TextBox ID="tbIngred1" runat="server" Text='<%# Bind("ingredient1") %>' />
                         </td>
                         <td style="text-align:left;">
-                            
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Please enter at least 1 ingredient." CssClass="validationError" ControlToValidate="tbIngred1"></asp:RequiredFieldValidator>
                         </td>
                     </tr>
                     <tr>
@@ -101,6 +101,8 @@
                         <td style="text-align:left;">
                             <asp:TextBox ID="ingredient2TextBox" runat="server" Text='<%# Bind("ingredient2") %>' />
                         </td>
+                        <td>
+                        </td>
                     </tr>
                     <tr>
                         <td style="text-align:right;">
@@ -108,6 +110,8 @@
                         </td>
                         <td style="text-align:left;">
                             <asp:TextBox ID="ingredient3TextBox" runat="server" Text='<%# Bind("ingredient3") %>' />
+                        </td>
+                        <td>
                         </td>
                     </tr>
                     <tr>
@@ -117,6 +121,8 @@
                         <td style="text-align:left;">
                             <asp:TextBox ID="ingredient4TextBox" runat="server" Text='<%# Bind("ingredient4") %>' />
                         </td>
+                        <td>
+                        </td>
                     </tr>
                     <tr>
                         <td style="text-align:right;">
@@ -124,6 +130,8 @@
                         </td>
                         <td style="text-align:left;">
                             <asp:TextBox ID="ingredient5TextBox" runat="server" Text='<%# Bind("ingredient5") %>' />
+                        </td>
+                        <td>
                         </td>
                     </tr>
                     <tr>
@@ -134,7 +142,7 @@
                             <asp:TextBox ID="tbPrep" runat="server" Text='<%# Bind("preparation") %>' />
                         </td>
                         <td style="text-align:left;">
-                           
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Please enter preparation instructions." CssClass="validationError" ControlToValidate="tbPrep"></asp:RequiredFieldValidator>
                         </td>
                     </tr>
                     <tr>
@@ -144,13 +152,17 @@
                         <td style="text-align:left;">
                             <asp:TextBox ID="notesTextBox" runat="server" Text='<%# Bind("notes") %>' />
                         </td>
+                        <td>
+                        </td>
                     </tr>
                     <tr>
                         <td style="text-align:right;">
                             <asp:Button ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
                         </td>
                         <td style="text-align:left;">
-                            
+                            <asp:Button ID="CancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                        </td>
+                        <td>
                         </td>
                     </tr>
                 </table>
