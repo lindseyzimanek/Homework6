@@ -51,7 +51,7 @@
         &nbsp;&nbsp;&nbsp;
         <asp:HyperLink ID="ContactLink" runat="server" NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink>
         <br />
-        <asp:FormView ID="FormView1" runat="server" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" DefaultMode="Insert" Width="575px">
+        <asp:FormView ID="FormView1" runat="server" CssClass="cssformview" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" DefaultMode="Insert" Width="575px">
             
             <InsertItemTemplate>
                 <table>
@@ -63,7 +63,7 @@
                             <asp:TextBox ID="tbRecipeName" runat="server" Text='<%# Bind("recipe_name") %>' />
                         </td>
                         <td style="text-align:left;">
-                            <asp:RequiredFieldValidator ID="rfv_recipeName" runat="server" ErrorMessage="Please enter the recipe name." CssClass="validationError" ControlToValidate="tbRecipeName"></asp:RequiredFieldValidator>
+                            
                         </td>
                     </tr>
                     <tr>
@@ -74,7 +74,7 @@
                             <asp:TextBox ID="tbSubmittedBy" runat="server" Text='<%# Bind("submitted_by") %>' />
                         </td>
                         <td style="text-align:left;">
-                            <asp:RequiredFieldValidator ID="rfv_submittedBy" runat="server" ErrorMessage="Please enter your name." CssClass="validationError" ControlToValidate="tbSubmittedBy"></asp:RequiredFieldValidator>
+                            
                         </td>
                     </tr>
                     <tr>
@@ -85,7 +85,7 @@
                             <asp:TextBox ID="tbIngred1" runat="server" Text='<%# Bind("ingredient1") %>' />
                         </td>
                         <td style="text-align:left;">
-                            <asp:RequiredFieldValidator ID="rfvIngred1" runat="server" ErrorMessage="Please enter at least 1 ingredient." CssClass="validationError" ControlToValidate="tbIngred1"></asp:RequiredFieldValidator>
+                            
                         </td>
                     </tr>
                     <tr>
@@ -128,7 +128,7 @@
                             <asp:TextBox ID="tbPrep" runat="server" Text='<%# Bind("preparation") %>' />
                         </td>
                         <td style="text-align:left;">
-                            <asp:RequiredFieldValidator ID="rfvPrep" runat="server" ErrorMessage="Please enter preparation instructions." CssClass="validationError" ControlToValidate="tbPrep"></asp:RequiredFieldValidator>
+                           
                         </td>
                     </tr>
                     <tr>
@@ -144,7 +144,7 @@
                             <asp:Button ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
                         </td>
                         <td style="text-align:left;">
-                            <asp:Button ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                            
                         </td>
                     </tr>
                 </table>

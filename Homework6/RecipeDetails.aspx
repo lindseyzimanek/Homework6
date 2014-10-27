@@ -61,7 +61,7 @@
         <asp:Label ID="lblDeletedRecipe" runat="server"></asp:Label>
         <br />
         <br />
-        <asp:FormView ID="FormView1" runat="server" DataKeyNames="recipeID" DataSourceID="SqlDataSource1">
+        <asp:FormView ID="FormView1" runat="server" CssClass="cssformview" DataKeyNames="recipeID" DataSourceID="SqlDataSource1">
             <EditItemTemplate>
                 recipeID:
                 <asp:Label ID="recipeIDLabel1" runat="server" Text='<%# Eval("recipeID") %>' />

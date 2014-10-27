@@ -16,3 +16,12 @@ h2{color:black; text-align:center;}
     color:red;
     font-weight:bold;
 }
+
+.cssgridview {width:auto; margin:5px 0 10px 0; border: solid 10px white; border-collapse:collapse; text-align:center;}
+.cssgridview td {padding:10px; border:solid 1px white; color:white;background-color:#F08080;}
+.cssgridview th {padding:10px; color:silver; background:#FFFF99; border-left:solid 1px white; font-family:0.9em;}
+
+.cssformview {width:auto; margin:5px 0 10px 0; border: solid 10px white; border-collapse:collapse; text-align:center;}
+.cssformview td {padding:10px; border:solid 1px white; color:white;background-color:#F08080;}
+.cssformview th {padding:10px; color:silver; background:#FFFF99; border-left:solid 1px white; font-family:0.9em;}
+
