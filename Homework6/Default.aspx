@@ -4,7 +4,9 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Lindsey's Recipe Website</title>
+    <h1>Lindsey's Recipe Website</h1>
+    <h2>Using 5 Ingredients or Less!</h2>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -38,10 +40,6 @@
                 <asp:Parameter Name="recipeID" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
-        <br />
-        <br />
-        <br />
-        <br />
         <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:HyperLink ID="HyperLink1" runat="server">Home</asp:HyperLink>

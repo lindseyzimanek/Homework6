@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Lindsey's Recipe Website</title>
+    <title>Recipe Details</title>
     <h1>Lindsey's Recipe Website</h1>
     <h2>Using 5 Ingredients or Less!</h2>
 </head>
@@ -44,6 +44,14 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink1" runat="server">Home</asp:HyperLink>
+        &nbsp;&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink2" runat="server">New Recipe</asp:HyperLink>
+        &nbsp;&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink3" runat="server">About Us</asp:HyperLink>
+        &nbsp;&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink4" runat="server">Contact</asp:HyperLink>
         <br />
         <asp:FormView ID="FormView1" runat="server" DataKeyNames="recipeID" DataSourceID="SqlDataSource1">
             <EditItemTemplate>
