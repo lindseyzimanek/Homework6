@@ -7,6 +7,7 @@
     <title>Recipe Details</title>
     <h1>Lindsey's Recipe Website</h1>
     <h2>Using 5 Ingredients or Less!</h2>
+    <link rel="stylesheet" type="text/css" href="~/css/StyleSheet.css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -44,6 +45,8 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <br />
+        <span class="deletedRecipe"><asp:Label ID="lblDeletedRecipe" runat="server"></asp:Label></span>
+        <br />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:HyperLink ID="HomeLink" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
         &nbsp;&nbsp;&nbsp;
@@ -52,6 +55,10 @@
         <asp:HyperLink ID="AboutUsLink" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink>
         &nbsp;&nbsp;&nbsp;
         <asp:HyperLink ID="ContactLink" runat="server" NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink>
+        <br />
+        <br />
+        <asp:Label ID="lblDeletedRecipe" runat="server"></asp:Label>
+        <br />
         <br />
         <asp:FormView ID="FormView1" runat="server" DataKeyNames="recipeID" DataSourceID="SqlDataSource1">
             <EditItemTemplate>
