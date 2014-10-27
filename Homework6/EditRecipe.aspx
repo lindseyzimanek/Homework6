@@ -258,5 +258,6 @@
     
     </div>
     </form>
+    <p><i class="footer">Copyright © 2014. Created by Lindsey Zimanek.</i></p>
 </body>
 </html>
