@@ -40,9 +40,7 @@
         </asp:SqlDataSource>
         <br />
         <br />
-        <asp:Label ID="Label1" runat="server" Text="Lindsey's Recipe Website"></asp:Label>
         <br />
-        <asp:Label ID="Label2" runat="server" Text="Using 5 Ingredients or Less!"></asp:Label>
         <br />
         <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
