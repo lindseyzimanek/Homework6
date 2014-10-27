@@ -54,6 +54,7 @@
         <asp:FormView ID="FormView1" runat="server" CssClass="cssformview" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" DefaultMode="Insert" Width="575px">
             
             <InsertItemTemplate>
+                <div class="table">
                 <table>
                     <tr>
                         <td style="text-align:right;">
@@ -148,6 +149,7 @@
                         </td>
                     </tr>
                 </table>
+                    </div>
             </InsertItemTemplate>
             <ItemTemplate>
                 recipeID:

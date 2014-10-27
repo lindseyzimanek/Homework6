@@ -128,7 +128,8 @@
                 &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
             </InsertItemTemplate>
             <ItemTemplate>
-                 <table>
+                
+                <table>
                    <tr>
                         <td style="text-align:right;">
                             Recipe Name:
@@ -210,6 +211,7 @@
                         </td>
                     </tr>
                 </table>
+                    
             </ItemTemplate>
         </asp:FormView>
     
