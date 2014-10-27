@@ -45,6 +45,7 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <br />
+        <span class="navBar">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:HyperLink ID="HomeLink" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
         &nbsp;&nbsp;&nbsp;
@@ -53,6 +54,7 @@
         <asp:HyperLink ID="AboutUsLink" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink>
         &nbsp;&nbsp;&nbsp;
         <asp:HyperLink ID="ContactLink" runat="server" NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink>
+            </span>
         <br />
         <asp:FormView ID="FormView1" runat="server" CssClass="cssformview" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" DefaultMode="Insert" Width="308px" HorizontalAlign="Center">
             
@@ -67,7 +69,7 @@
                             <asp:TextBox ID="tbRecipeName" runat="server" Text='<%# Bind("recipe_name") %>' />
                         </td>
                         <td style="text-align:left;">
-                            
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please enter the name of the recipe." CssClass="validationError" ControlToValidate="tbRecipeName"></asp:RequiredFieldValidator>
                         </td>
                     </tr>
                     <tr>

@@ -42,14 +42,16 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="navBar">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:HyperLink ID="HomeLink" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
-&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;
         <asp:HyperLink ID="NewRecipeLink" runat="server" NavigateUrl="~/NewRecipe.aspx">New Recipe</asp:HyperLink>
-&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;
         <asp:HyperLink ID="AboutUsLink" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink>
-&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;
         <asp:HyperLink ID="ContactLink" runat="server" NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink>
+         </span>
         <asp:GridView ID="GridView1" runat="server" CssClass="cssgridview" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" Width="354px" HorizontalAlign="Center">
             <Columns>
                 <asp:BoundField DataField="recipe_name" HeaderText="Recipe Name" SortExpression="recipe_name" />

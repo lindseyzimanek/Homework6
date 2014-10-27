@@ -13,6 +13,7 @@
     <form id="form1" runat="server">
     <div>
         <br />
+        <span class="navBar">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:HyperLink ID="HomeLink" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
         &nbsp;&nbsp;&nbsp;
@@ -21,6 +22,7 @@
         <asp:HyperLink ID="AboutUsLink" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink>
         &nbsp;&nbsp;&nbsp;
         <asp:HyperLink ID="ContactLink" runat="server" NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink>
+            </span>
         <br />
         <p>
             Hsf ijsf ksdjfsd jdfsdf. Jfjda asjdf jsdfh jasdf ajs ks. Jjkans jksd ir ia ioa oaa arjwea. Ljka ajkfa ahf.

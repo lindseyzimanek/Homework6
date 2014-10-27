@@ -15,6 +15,7 @@
     <form id="form1" runat="server">
 
          <br />
+        <span class="navBar">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:HyperLink ID="HomeLink" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
         &nbsp;&nbsp;&nbsp;
@@ -23,6 +24,7 @@
         <asp:HyperLink ID="AboutUsLink" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink>
         &nbsp;&nbsp;&nbsp;
         <asp:HyperLink ID="ContactLink" runat="server" NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink>
+            </span>
         <br />
 
         <!-- Check to see if you are in postback.  If not, display the contact form. -->

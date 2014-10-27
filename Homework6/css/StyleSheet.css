@@ -1,5 +1,9 @@
 ﻿body {
     background-color: tan;
+    margin: 0px auto;
+    width: 750px;
+    text-align: center;
+    align-items: center;
 }
 
 
@@ -25,5 +29,6 @@ h2{color:black; text-align:center;}
 .cssformview td {padding:10px; border:solid 1px white; color:white;background-color:#F08080;}
 .cssformview th {padding:10px; color:silver; background:#FFFF99; border-left:solid 1px white; font-family:0.9em;}
 
-.table {align-content:center;}
+.navBar {text-align: center; margin: 0px auto;
+}
 
